@@ -1,0 +1,40 @@
+.item {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    font-size: 13px;
+
+    .left {
+        display: flex;
+        align-items: center;
+        flex-basis: 50%;
+
+        .name {
+            margin-left: 10px;
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        flex-basis: 50%;
+
+        .quantity {
+            display: flex;
+            margin-right: 20px;
+            align-items: center;
+            flex: 0 0;
+
+            .amount {
+                margin: 0px 4px;
+            }
+        }
+
+        .cost {
+            margin-right: 10px;
+            flex: 0 0;
+        }
+    }
+}

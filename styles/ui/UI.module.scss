@@ -1,0 +1,234 @@
+//notification
+.notification {
+    z-index: 9999;
+    border: 2px solid #e69600;
+}
+//button
+.button {
+    padding: 0px 20px;
+    margin: 5px 0;
+}
+//buy-button
+.buy {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 5px;
+}
+//cart-button
+.cart {
+    display: none;
+    position: sticky;
+    bottom: 20px;
+    left: 10px;
+    background-color: #e69600;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+
+    .amount {
+        transition: all 0.2s ease-in-out;
+        position: absolute;
+        top: -5px;
+        left: 20px;
+        color: white;
+        font-size: 13px;
+        background-color: black;
+        border-radius: 50%;
+        padding: 4px 10px
+    }
+}
+
+.cart:hover {
+    .amount {
+        color: #e69600;
+    }
+    
+}
+@media (max-width: 850px) {
+    .cart {
+        display: block;
+    }
+}
+//nav-cart
+.nav-cart {
+    position: absolute;
+    right: 50px;
+    margin: 5px 0;
+    cursor: pointer;
+
+    .amount {
+        transition: all 0.2s ease-in-out;
+        position: absolute;
+        top: -5px;
+        left: 20px;
+        color: white;
+        font-size: 13px;
+        background-color: black;
+        border-radius: 50%;
+        padding: 4px 10px;
+    }
+}
+
+.nav-cart:hover {
+    .amount {
+        color: #e69600;
+    }
+    
+}
+
+@media (max-width: 850px) {
+    .nav-cart {
+        display: none;
+    }
+}
+//close-button {
+.close {
+    position: absolute;
+    top: -40px;
+    right: -30px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+}
+//burger-button
+.burger { 
+    width: 30px;
+    height: 20px;
+    position: fixed; 
+    top: 25px;
+    right: 15px;
+    display: none; 
+    cursor: pointer; 
+    z-index: 3;
+ 
+    .line, 
+    .line::before, 
+    .line::after { 
+        user-select: none; 
+        position: absolute; 
+        background-color: black;  
+        cursor: pointer; 
+        transition: transform 0.2s linear; 
+    } 
+ 
+    .line { 
+        height: 2.5px; 
+        width: 30px; 
+        top: 0; 
+        left: 0; 
+    } 
+ 
+    .line::before { 
+        height: 2.5px; 
+        width: 30px; 
+        content: ''; 
+        top: -9px; 
+    } 
+ 
+    .line::after { 
+        height: 2.5px; 
+        width: 20px; 
+        content: ''; 
+        top: 9px; 
+        left: 10px; 
+    } 
+} 
+ 
+.active { 
+    z-index: 5;
+
+    .line::before { 
+        transform: rotate(-90deg); 
+        top: 0; 
+    } 
+ 
+    .line { 
+        transform: rotate(45deg); 
+    } 
+ 
+    .line::after { 
+        visibility: collapse; 
+    } 
+} 
+ 
+@media (max-width: 850px) { 
+    .burger { 
+        display: block; 
+    } 
+}
+
+@media (min-width: 850px) { 
+    .active { 
+        .line {
+            display: none;
+        }
+    } 
+}
+//select 
+.select {
+    width: 200px;
+    font-family: 'Comfortaa', cursive;
+    margin: 5px 0;
+}
+//input
+.input {
+    font-family: 'Comfortaa', cursive; 
+    margin: 5px 0;
+}
+.address-input {
+    font-family: 'Comfortaa', cursive; 
+    width: 150px;
+    margin: 5px 10px 5px 0;
+}
+//password
+.password {
+    margin: 5px 0;
+}
+
+.password * {
+    font-family: 'Comfortaa', cursive; 
+}
+//modal
+.logmodal {
+    transition: all 0.4s ease-in-out;
+    z-index: 999;
+    transform: scale(0);
+    opacity: 0;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .content {
+        position: relative;
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content p {
+        color: gray;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+.active {
+    transform: scale(1);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+        display: flex;
+    }
+}

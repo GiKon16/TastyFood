@@ -1,0 +1,12 @@
+.item {
+    display: flex;
+    align-items: center;
+
+    .right {
+        margin-left: 20px;
+
+        .name {
+            font-size: 36px;
+        }
+    }
+}

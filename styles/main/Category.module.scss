@@ -1,0 +1,32 @@
+.category {
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        width: 80%;
+        margin: 0 auto;
+
+        .title {
+            font-size: 4vw;
+            text-align: center;
+            margin: 100px 0 40px 0;
+        }
+
+        .list {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .category {
+        .content{
+            .title {
+                font-size: 48px;
+            }
+        }
+    }
+}

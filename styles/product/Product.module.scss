@@ -1,0 +1,61 @@
+.main {
+    height: calc(100vh - 110px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img-container {
+        position: relative;
+        width: 70%;
+        height: 70%;
+        flex-basis: 50%;
+    }
+
+    .info {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .name {
+            font-size: 6vw;
+        }
+
+        .block {
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+
+        .nutrition {
+            display: flex;
+
+            .value {
+                margin-right: 5px;
+            }
+        }
+
+        .sizes {
+            margin: 20px 5px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .main {
+        .info {
+           .name {
+            font-size: 48px;
+           }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .main {
+        flex-direction: column;
+
+        .info {
+            flex-basis: 0;
+        }
+    }
+}

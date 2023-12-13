@@ -1,0 +1,32 @@
+.main {
+    .content {
+        padding: 50px 0;
+        width: 80%;
+        margin: 0 auto;
+
+        .title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .inputs {
+            margin-top: 50px;
+
+            .address {
+                display: flex;
+            }
+        }
+
+        .paying {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            .methods {
+                margin: 20px 0;
+            }
+        }
+    }
+}

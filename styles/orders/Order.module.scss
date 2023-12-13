@@ -1,0 +1,28 @@
+.main {
+    min-height: calc(72vh - 110px);
+
+    .content {
+        padding: 50px 0;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .comp {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .items {
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                height: 70vh;
+                overflow-y: auto;
+                scrollbar-color: #e69600 rgb(226, 226, 226);
+                scrollbar-width: thin;
+            }
+        }
+    }
+}
